@@ -1,0 +1,79 @@
+- git:
+    local-name: automated_driving_msgs
+    uri: https://github.com/fzi-forschungszentrum-informatik/automated_driving_msgs.git
+- git:
+    local-name: desired_motion_rviz_plugin_ros
+    uri: https://github.com/coincar-sim/desired_motion_rviz_plugin_ros.git
+- git:
+    local-name: lanelet_rviz_plugin_ros
+    uri: https://github.com/coincar-sim/lanelet_rviz_plugin_ros.git
+- git:
+    local-name: motion_state_rviz_plugin_ros
+    uri: https://github.com/coincar-sim/motion_state_rviz_plugin_ros.git
+- git:
+    local-name: mrt_cmake_modules
+    uri: https://github.com/KIT-MRT/mrt_cmake_modules.git
+- git:
+    local-name: object_state_array_rviz_plugin_ros
+    uri: https://github.com/coincar-sim/object_state_array_rviz_plugin_ros.git
+- git:
+    local-name: rosinterface_handler
+    uri: https://github.com/KIT-MRT/rosinterface_handler.git
+- git:
+    local-name: rosparam_handler
+    uri: https://github.com/cbandera/rosparam_handler.git
+    version: cba741b07740
+- git:
+    local-name: rviz_satellite
+    uri: https://github.com/gareth-cross/rviz_satellite.git
+- git:
+    local-name: sim_lanelet
+    uri: https://github.com/coincar-sim/sim_lanelet.git
+- git:
+    local-name: sim_sample_actuator_ros_tool
+    uri: https://github.com/coincar-sim/sim_sample_actuator_ros_tool.git
+- git:
+    local-name: sim_sample_communication_ros_tool
+    uri: https://github.com/coincar-sim/sim_sample_communication_ros_tool.git
+- git:
+    local-name: sim_sample_perception_ros_tool
+    uri: https://github.com/coincar-sim/sim_sample_perception_ros_tool.git
+- git:
+    local-name: sim_sample_planning_ros_tool
+    uri: https://github.com/coincar-sim/sim_sample_planning_ros_tool.git
+- git:
+    local-name: sim_sample_prediction_ros_tool
+    uri: https://github.com/coincar-sim/sim_sample_prediction_ros_tool.git
+- git:
+    local-name: simulation_initialization_ros_tool
+    uri: https://github.com/coincar-sim/simulation_initialization_ros_tool.git
+- git:
+    local-name: simulation_management_ros_tool
+    uri: https://github.com/coincar-sim/simulation_management_ros_tool.git
+- git:
+    local-name: simulation_only_msgs
+    uri: https://github.com/coincar-sim/simulation_only_msgs.git
+- git:
+    local-name: simulation_utils_ros_tool
+    uri: https://github.com/coincar-sim/simulation_utils_ros_tool.git
+- git:
+    local-name: util_automated_driving_msgs
+    uri: https://github.com/coincar-sim/util_automated_driving_msgs.git
+- git:
+    local-name: util_eigen_geometry
+    uri: https://github.com/coincar-sim/util_eigen_geometry.git
+- git:
+    local-name: util_geo_coordinates_ros
+    uri: https://github.com/coincar-sim/util_geo_coordinates_ros.git
+- git:
+    local-name: util_geometry_msgs
+    uri: https://github.com/coincar-sim/util_geometry_msgs.git
+- git:
+    local-name: util_lanelet
+    uri: https://github.com/coincar-sim/util_lanelet.git
+- git:
+    local-name: util_rviz
+    uri: https://github.com/coincar-sim/util_rviz.git
+- git:
+    local-name: util_simulation_only_msgs
+    uri: https://github.com/coincar-sim/util_simulation_only_msgs.git
