@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/coincar-sim/coincarsim_getting_started.svg?branch=release)](https://travis-ci.org/coincar-sim/coincarsim_getting_started)
+
 # CoInCar-Sim
 ### An Open-Source Simulation Framework for Cooperatively Interacting Automobiles
 
@@ -18,8 +20,9 @@ In order to use the framework, you need to install the following packages (insta
   * `ros-kinetic-desktop-full`
   * `ros-kinetic-geodesy`
   * `ros-kinetic-tf2-geometry-msgs`
-* Catkin Tools (see http://catkin-tools.readthedocs.io/en/latest/index.html)
-  * `python-catkin-tools`
+* Catkin tools and wstool
+  * `python-catkin-tools` (http://catkin-tools.readthedocs.io/en/latest/index.html)
+  * `python-wstool` (http://wiki.ros.org/wstool)
 * System Libraries
   * `libpugixml-dev`
   * `qt5-default`
@@ -70,14 +73,18 @@ Parts of this Framework
 
 
 ## Installation
+This section describes the installation of the framework, assuming the prerequisites have already been installed.
+
+For the full installation starting at a clean Ubuntu 16.04, have a look at how Travis does it in about 10 minutes: [![Build Status](https://api.travis-ci.org/coincar-sim/coincarsim_getting_started.svg?branch=release)](https://travis-ci.org/coincar-sim/coincarsim_getting_started)
+
 #### 1) Source ROS
 * open a terminal
 * source ROS
   * `source /opt/ros/kinetic/setup.bash`
   * you might want to add this to your `.bashrc`
 
-#### 2) Download the workspace config file and get ssh access to the gitlab
-* download the desired `*.rosinstall` file from the folder `ws_config`
+#### 2) Download the workspace config
+* download the desired `*.rosinstall` file from the folder `ws_config` (or clone this repo)
   * recommended: use `simulation_framework_latest.rosinstall`
 
 #### 3a) Set up and build the workspace yourself
