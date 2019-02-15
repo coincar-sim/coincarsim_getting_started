@@ -8,6 +8,12 @@
     local-name: lanelet_rviz_plugin_ros
     uri: https://github.com/coincar-sim/lanelet_rviz_plugin_ros.git
 - git:
+    local-name: lanelet2
+    uri: https://github.com/fzi-forschungszentrum-informatik/Lanelet2.git
+- git:
+    local-name: lanelet2_interface_ros
+    uri: https://github.com/coincar-sim/lanelet2_interface_ros.git
+- git:
     local-name: motion_state_rviz_plugin_ros
     uri: https://github.com/coincar-sim/motion_state_rviz_plugin_ros.git
 - git:
@@ -23,12 +29,6 @@
     local-name: rosparam_handler
     uri: https://github.com/cbandera/rosparam_handler.git
     version: cba741b07740
-- git:
-    local-name: rviz_satellite
-    uri: https://github.com/gareth-cross/rviz_satellite.git
-- git:
-    local-name: sim_lanelet
-    uri: https://github.com/coincar-sim/sim_lanelet.git
 - git:
     local-name: sim_sample_actuator_ros_tool
     uri: https://github.com/coincar-sim/sim_sample_actuator_ros_tool.git
@@ -63,14 +63,8 @@
     local-name: util_eigen_geometry
     uri: https://github.com/coincar-sim/util_eigen_geometry.git
 - git:
-    local-name: util_geo_coordinates_ros
-    uri: https://github.com/coincar-sim/util_geo_coordinates_ros.git
-- git:
     local-name: util_geometry_msgs
     uri: https://github.com/coincar-sim/util_geometry_msgs.git
-- git:
-    local-name: util_lanelet
-    uri: https://github.com/coincar-sim/util_lanelet.git
 - git:
     local-name: util_rviz
     uri: https://github.com/coincar-sim/util_rviz.git
