@@ -39,6 +39,7 @@ install:
   - sudo apt-get install -y ros-kinetic-tf2-geometry-msgs
   - sudo apt-get install -y python-wstool
   - sudo apt-get install -y python-catkin-tools
+  - sudo apt-get install -y libgeographic-dev
   - sudo apt-get install -y libpugixml-dev
   - sudo apt-get install -y qt5-default
   - source /opt/ros/$ROS_DISTRO/setup.bash

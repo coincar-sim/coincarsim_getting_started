@@ -24,9 +24,10 @@ In order to use the framework, you need to install the following packages (insta
   * `python-catkin-tools` (http://catkin-tools.readthedocs.io/en/latest/index.html)
   * `python-wstool` (http://wiki.ros.org/wstool)
 * System Libraries
-  * `libpugixml-dev`
+  * `libgeographic-dev` (for lanelet2)
+  * `libpugixml-dev` (for lanelet2)
   * `qt5-default`
-  * boost and eigen are installed with ROS
+  * boost, boost-python and eigen are installed with ROS
 
 ## Installation
 This section describes the installation of the framework, assuming the prerequisites have already been installed.

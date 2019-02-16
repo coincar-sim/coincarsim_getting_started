@@ -36,12 +36,9 @@
 * utilities:
   * simulation_only_msgs: additional messages
   * simulation_utils_ros_tool: small utility nodes
-  * sim_lanelet: lanelet map library
   * util_automated_driving_msgs
   * util_eigen_geometry
-  * util_geo_coordinates_ros
   * util_geometry_msgs
-  * util_lanelet
   * util_rviz
   * util_simulation_only_msgs
 
