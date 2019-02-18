@@ -11,5 +11,10 @@ cd catkin_ws
 wstool init src $ROSINSTALLFILE
 echo "Building packages..."
 catkin build
+return_value=$?
+if [ $return_value -eq 1 ]; then
+  echo "Build failed"
+  exit 1
+fi
 echo
 echo "Remember to source the build files!"
