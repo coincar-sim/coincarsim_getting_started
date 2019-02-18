@@ -7,9 +7,7 @@ This is the main readme of the ROS Simulation Framework CoInCar-Sim, developed j
 
 ![Visualization of the framework (rviz)](doc/framework-rviz.png)
 
-The motivation and concept is explained in
-
-Maximilian Naumann, Fabian Poggenhans, Martin Lauer, Christoph Stiller. **CoInCar-Sim: An Open-Source Simulation Framework for Cooperatively Interacting Automobiles.** In _Proc. IEEE Int. Conf. Intelligent Vehicles_, June 2018. to appear. [[.pdf]](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf)
+The motivation and concept is explained in our [publication](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf) [[DOI](http://dx.doi.org/%2010.1109/IVS.2018.8500405)].
 
 ## General Information
 Installation requires Linux as operating system. The framework is developed and tested under [Ubuntu 16.04](http://releases.ubuntu.com/16.04/).
@@ -18,7 +16,6 @@ Installation requires Linux as operating system. The framework is developed and 
 In order to use the framework, you need to install the following packages (installable via `apt install`)
 * ROS (see http://wiki.ros.org/ROS/Installation)
   * `ros-kinetic-desktop-full`
-  * `ros-kinetic-geodesy`
   * `ros-kinetic-tf2-geometry-msgs`
 * Catkin tools and wstool
   * `python-catkin-tools` (http://catkin-tools.readthedocs.io/en/latest/index.html)
@@ -32,7 +29,7 @@ In order to use the framework, you need to install the following packages (insta
 ## Installation
 This section describes the installation of the framework, assuming the prerequisites have already been installed.
 
-For the full installation starting at a clean Ubuntu 16.04, have a look at how Travis does it in about 10 minutes: [![Build Status](https://api.travis-ci.org/coincar-sim/coincarsim_getting_started.svg?branch=release)](https://travis-ci.org/coincar-sim/coincarsim_getting_started)
+For the full installation starting at a clean Ubuntu 16.04, have a look at how Travis does it in about 15 minutes: [![Build Status](https://api.travis-ci.org/coincar-sim/coincarsim_getting_started.svg?branch=release)](https://travis-ci.org/coincar-sim/coincarsim_getting_started)
 
 #### 1) Source ROS
 * open a terminal
@@ -80,3 +77,18 @@ or
 
 ## License
 See the respective packages for license issues.
+
+## Citation
+If you are using CoInCar-Sim for scientific research, we would be pleased if you would cite our [publication](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf) [[DOI](http://dx.doi.org/%2010.1109/IVS.2018.8500405)]:
+```latex
+@inproceedings{Naumann2018CoInCarSim,
+  title     = {{C}o{I}n{C}ar-{S}im: An Open-Source Simulation Framework for Cooperatively Interacting Automobiles},
+  author    = {M. {Naumann} and F. {Poggenhans} and M. {Lauer} and C. {Stiller}},
+  booktitle = {Proc. IEEE Int. Conf. Intelligent Vehicles},
+  year      = {2018},
+  address   = {Changshu, China},
+  month     = {June},
+  pages     = {1879--1884},
+  doi       = {10.1109/IVS.2018.8500405}
+}
+```

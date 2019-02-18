@@ -26,10 +26,6 @@
     local-name: rosinterface_handler
     uri: https://github.com/KIT-MRT/rosinterface_handler.git
 - git:
-    local-name: rosparam_handler
-    uri: https://github.com/cbandera/rosparam_handler.git
-    version: cba741b07740
-- git:
     local-name: sim_sample_actuator_ros_tool
     uri: https://github.com/coincar-sim/sim_sample_actuator_ros_tool.git
 - git:
@@ -53,9 +49,6 @@
 - git:
     local-name: simulation_only_msgs
     uri: https://github.com/coincar-sim/simulation_only_msgs.git
-- git:
-    local-name: simulation_utils_ros_tool
-    uri: https://github.com/coincar-sim/simulation_utils_ros_tool.git
 - git:
     local-name: util_automated_driving_msgs
     uri: https://github.com/coincar-sim/util_automated_driving_msgs.git

@@ -95,8 +95,6 @@ In order to add a third vehicle, you have to launch another sample_vehicle by in
         <arg name="pred_plan_obj_topic" value="$(arg pred_plan_obj_topic)" />
         <arg name="internal_communication_subns" value="$(arg internal_communication_subns)" />
         <arg name="BSM_topic" value="$(arg BSM_topic)" />
-        <arg name="lanelet_map_filename" value="$(arg lanelet_map_filename)" />
-        <arg name="navsatfix_topic" value="$(arg navsatfix_topic)" />
 
         <arg name="object_initialization_topic_with_ns" value="$(arg object_initialization_topic_with_ns)" />
         <arg name="trajectory_file" value="$(find simulation_initialization_ros_tool)/res/traj2.osm" />
@@ -104,7 +102,6 @@ In order to add a third vehicle, you have to launch another sample_vehicle by in
         <arg name="hull_file" value="$(find simulation_initialization_ros_tool)/res/sample_hull.xml" />
         <arg name="object_type" value="car" />
         <arg name="s_start" value="20.0" /> <!-- changed -->
-        <arg name="frame_id_initial_position" value="$(arg utm_base_frame)" />
         <arg name="frame_id_loc_mgmt" value="$(arg loc_mgmt_frame)" />
     </include>
 ```
@@ -135,7 +132,7 @@ After the `latestMotionState_` is saved (for finite differences), but before it 
 
     // publish new motion state
     percEgoMotionPub_.publish(egoObjectState.motion_state);
-    
+
 ```
 You can visualize this wrong ego position by adding a MotionState-plugin to rviz and setting the topic to `/v1/ego_motion_state` for example
 

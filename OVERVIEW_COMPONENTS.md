@@ -4,9 +4,10 @@
 
 #### External Dependencies
 * [automated_driving_msgs](https://github.com/fzi-forschungszentrum-informatik/automated_driving_msgs): messages used by the framework
+* [lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2): map framework for automated driving
 * [mrt_cmake_modules](https://github.com/KIT-MRT/mrt_cmake_modules): cmake helper
 * [rosinterface_handler](https://github.com/KIT-MRT/rosinterface_handler): ROS interface handling
-* [rviz_satellite](https://github.com/gareth-cross/rviz_satellite): plugin for visualization of satellite images
+
 
 #### Parts of this Framework
 
@@ -34,8 +35,8 @@
 
 
 * utilities:
+  * lanelet2_interface_ros
   * simulation_only_msgs: additional messages
-  * simulation_utils_ros_tool: small utility nodes
   * util_automated_driving_msgs
   * util_eigen_geometry
   * util_geometry_msgs
