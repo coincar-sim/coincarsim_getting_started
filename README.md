@@ -37,12 +37,25 @@ For the full installation starting at a clean Ubuntu 16.04, have a look at how T
   * `source /opt/ros/kinetic/setup.bash`
   * you might want to add this to your `.bashrc`
 
-#### 2) Download the workspace config
+#### 2) Use the script to download and install the framework
+* navigate to the folder where you want to place the framework
+* execute the script
+  * `desired_folder$ bash <(wget -qO- https://raw.githubusercontent.com/coincar-sim/coincarsim_getting_started/release/setup_workspace.sh)`
+  * this creates a catkin workspace and downloads all [source dependencies](OVERVIEW_COMPONENTS.md) as defined in [`simulation_framework_latest.rosinstall`](ws_config/simulation_framework_latest.rosinstall)
+
+### Alternative Installation
+
+#### 2a) Download the script and execute the local one
 * download the desired `*.rosinstall` file from the folder `ws_config` (or clone this repo)
   * this config file contains the url of all [source dependencies](OVERVIEW_COMPONENTS.md) for their automated download in step 3
   * recommended: use `simulation_framework_latest.rosinstall`
+* also download the script and do the above steps by starting
+  * ` $ ./setup_workspace.sh simulation_framework_latest.rosinstall`  
 
-#### 3a) Set up and build the workspace yourself
+#### 2b) Set up and build the workspace yourself
+* download the desired `*.rosinstall` file from the folder `ws_config` (or clone this repo)
+  * this config file contains the url of all [source dependencies](OVERVIEW_COMPONENTS.md) for their automated download in step 3
+  * recommended: use `simulation_framework_latest.rosinstall`
 * set up a catkin workspace from the `*.rosinstall` file you just downloaded
   * ` $ mkdir catkin_ws && cd catkin_ws`
   * `catkin_ws$ wstool init src PATH_TO_ROSINSTALL_FILE.rosinstall`
@@ -51,27 +64,22 @@ For the full installation starting at a clean Ubuntu 16.04, have a look at how T
 * source the build-files
   * `catkin_ws$ source devel/setup.bash`
 
-or
-#### 3b) Use the script
-* also download the script and do the above steps by starting
-  * ` $ ./setup_workspace.sh simulation_framework_latest.rosinstall`
-
 ## Usage
-#### 4) Launch the framework
+#### 3) Launch the framework
 * source the build-files
   * `catkin_ws$ source devel/setup.bash`
 * start the simulation framework by launching the main launchfile:
   * `catkin_ws$ roslaunch simulation_initialization_ros_tool _whole_framework.launch`
   * see the Readme of simulation_initialization_ros_tool for details about how the parts of the framework are launched
 
-#### 5) Play with it
+#### 4) Play with it
 * as further described in [FIRST_STEPS.md](FIRST_STEPS.md)
 
-#### 6) Contribute
+#### 5) Contribute
 * fork simulation_initialization_ros_tool and modify the launchfiles/settings/workspace config to simulate (parts of) your vehicle
 * fork other components or create new vehicles to modify and/or extend the functionality
 
-#### 7) Stay tuned
+#### 6) Stay tuned
 * if you did choose the latest version, you can update it with
   * `catkin_ws$ wstool update`
 

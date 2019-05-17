@@ -1,9 +1,10 @@
 #!/bin/bash
 if [[ -z $1 ]]; then
-  echo "You must provide a rosinstall file!"
-  exit
+  echo "Using the default rosinstall file!"
+  ROSINSTALLFILE=https://raw.githubusercontent.com/coincar-sim/coincarsim_getting_started/release/ws_config/simulation_framework_latest.rosinstall
+else
+  ROSINSTALLFILE=$(cd $(dirname "$1") && pwd -P)/$(basename "$1")
 fi
-ROSINSTALLFILE=$(cd $(dirname "$1") && pwd -P)/$(basename "$1")
 echo "Initializing catkin workspace from $ROSINSTALLFILE ... (strg + c to cancel)"
 sleep 5
 mkdir catkin_ws
