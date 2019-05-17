@@ -51,4 +51,4 @@ before_script:
 
 script:
   # Set up the workspace (clone and build)
-  - ./setup_workspace.sh
+  - bash <(wget -qO- https://raw.githubusercontent.com/coincar-sim/coincarsim_getting_started/release/setup_workspace.sh)
