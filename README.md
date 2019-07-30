@@ -7,7 +7,7 @@ This is the main readme of the ROS Simulation Framework CoInCar-Sim, developed j
 
 ![Visualization of the framework (rviz)](doc/framework-rviz.png)
 
-The motivation and concept is explained in our [publication](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf) [[DOI](http://dx.doi.org/%2010.1109/IVS.2018.8500405)].
+The motivation and concept is explained in our [publication](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf) [[DOI](http://dx.doi.org/10.1109/IVS.2018.8500405)] and these [slides](doc/introductory_slides.html).
 
 ## General Information
 Installation requires Linux as operating system. The framework is developed and tested under [Ubuntu 16.04](http://releases.ubuntu.com/16.04/).
@@ -87,7 +87,7 @@ For the full installation starting at a clean Ubuntu 16.04, have a look at how T
 See the respective packages for license issues.
 
 ## Citation
-If you are using CoInCar-Sim for scientific research, we would be pleased if you would cite our [publication](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf) [[DOI](http://dx.doi.org/%2010.1109/IVS.2018.8500405)]:
+If you are using CoInCar-Sim for scientific research, we would be pleased if you would cite our [publication](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf) [[DOI](http://dx.doi.org/10.1109/IVS.2018.8500405)]:
 ```latex
 @inproceedings{Naumann2018CoInCarSim,
   title     = {{C}o{I}n{C}ar-{S}im: An Open-Source Simulation Framework for Cooperatively Interacting Automobiles},
