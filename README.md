@@ -10,11 +10,12 @@ This is the main readme of the ROS Simulation Framework CoInCar-Sim, developed j
 The motivation and concept is explained in our [publication](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf) [[DOI](http://dx.doi.org/10.1109/IVS.2018.8500405)] and these [slides](doc/introductory_slides.html).
 
 ## General Information
-Installation requires Linux as operating system. The framework is developed and tested under [Ubuntu 16.04](http://releases.ubuntu.com/16.04/).
+Installation requires Linux as operating system. The framework is developed and tested under [Ubuntu 16.04](http://releases.ubuntu.com/16.04/) and  [Ubuntu 18.04](http://releases.ubuntu.com/18.04/).
 
 #### Prerequisites
 In order to use the framework, you need to install the following packages (installable via `apt install`)
 * ROS (see http://wiki.ros.org/ROS/Installation)
+  * replace `kinetic` by `melodic` when using Ubuntu 18.04
   * `ros-kinetic-desktop-full`
   * `ros-kinetic-tf2-geometry-msgs`
 * Catkin tools and wstool
@@ -24,6 +25,7 @@ In order to use the framework, you need to install the following packages (insta
   * `libgeographic-dev` (for lanelet2)
   * `libpugixml-dev` (for lanelet2)
   * `qt5-default`
+  * `libqt5svg5-dev` (installed with `ros-kinetic-desktop-full` but not with `ros-melodic-desktop-full`)
   * boost, boost-python and eigen are installed with ROS
 
 ## Installation
@@ -34,7 +36,7 @@ For the full installation starting at a clean Ubuntu 16.04, have a look at how T
 #### 1) Source ROS
 * open a terminal
 * source ROS
-  * `source /opt/ros/kinetic/setup.bash`
+  * `source /opt/ros/kinetic/setup.bash` (`melodic` for Ubuntu 18.04)
   * you might want to add this to your `.bashrc`
 
 #### 2) Use the script to download and install the framework
