@@ -11,7 +11,7 @@ mkdir catkin_ws
 cd catkin_ws
 wstool init src $ROSINSTALLFILE
 echo "Building packages..."
-catkin build
+catkin build --continue-on-failure
 return_value=$?
 if [ $return_value -eq 1 ]; then
   echo "Build failed"
