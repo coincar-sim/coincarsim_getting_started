@@ -18,9 +18,10 @@ In order to use the framework, you need to install the following packages (insta
   * replace `kinetic` by `melodic` when using Ubuntu 18.04
   * `ros-kinetic-desktop-full`
   * `ros-kinetic-tf2-geometry-msgs`
-* Catkin tools and wstool
+* Catkin tools, wstool and rosdep
   * `python-catkin-tools` (http://catkin-tools.readthedocs.io/en/latest/index.html)
   * `python-wstool` (http://wiki.ros.org/wstool)
+  * `python-rosdep` (installed with `ros-kinetic-desktop-full` but not with `ros-melodic-desktop-full`)
 * System Libraries
   * `libgeographic-dev` (for lanelet2)
   * `libpugixml-dev` (for lanelet2)
