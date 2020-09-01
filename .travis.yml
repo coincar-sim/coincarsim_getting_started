@@ -11,15 +11,12 @@ language:
 cache:
   - apt
 
-# Build this with both 18.04 and 16.04
+# Build this with 18.04
 matrix:
     include:
     - dist: bionic
       env:
       - ROS_DISTRO=melodic
-    - dist: xenial
-      env:
-      - ROS_DISTRO=kinetic
 
 # Configuration variables.
 env:
@@ -49,7 +46,6 @@ install:
   - sudo apt-get install -y libgeographic-dev
   - sudo apt-get install -y libpugixml-dev
   - sudo apt-get install -y qt5-default
-  - sudo apt-get install -y libqt5svg5-dev
   - source /opt/ros/$ROS_DISTRO/setup.bash
   - sudo rosdep init
   - rosdep update
