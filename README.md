@@ -10,34 +10,32 @@ This is the main readme of the ROS Simulation Framework CoInCar-Sim, developed j
 The motivation and concept is explained in our [publication](http://www.mrt.kit.edu/z/publ/download/2018/Naumann2018CoInCarSim.pdf) [[DOI](http://dx.doi.org/10.1109/IVS.2018.8500405)] and these [slides](doc/introductory_slides.html).
 
 ## General Information
-Installation requires Linux as operating system. The framework is developed and tested under [Ubuntu 16.04](http://releases.ubuntu.com/16.04/) and  [Ubuntu 18.04](http://releases.ubuntu.com/18.04/).
+Installation requires Linux as operating system. The framework is developed and tested under [Ubuntu 18.04](http://releases.ubuntu.com/18.04/).
 
 #### Prerequisites
 In order to use the framework, you need to install the following packages (installable via `apt install`)
 * ROS (see http://wiki.ros.org/ROS/Installation)
-  * replace `kinetic` by `melodic` when using Ubuntu 18.04
-  * `ros-kinetic-desktop-full`
-  * `ros-kinetic-tf2-geometry-msgs`
+  * `ros-melodic-desktop-full`
+  * `ros-melodic-tf2-geometry-msgs`
 * Catkin tools, wstool and rosdep
   * `python-catkin-tools` (http://catkin-tools.readthedocs.io/en/latest/index.html)
   * `python-wstool` (http://wiki.ros.org/wstool)
-  * `python-rosdep` (installed with `ros-kinetic-desktop-full` but not with `ros-melodic-desktop-full`)
+  * `python-rosdep`
 * System Libraries
   * `libgeographic-dev` (for lanelet2)
   * `libpugixml-dev` (for lanelet2)
   * `qt5-default`
-  * `libqt5svg5-dev` (installed with `ros-kinetic-desktop-full` but not with `ros-melodic-desktop-full`)
   * boost, boost-python and eigen are installed with ROS
 
 ## Installation
 This section describes the installation of the framework, assuming the prerequisites have already been installed.
 
-For the full installation starting at a clean Ubuntu 16.04, have a look at how Travis does it in about 15 minutes: [![Build Status](https://api.travis-ci.org/coincar-sim/coincarsim_getting_started.svg?branch=release)](https://travis-ci.org/coincar-sim/coincarsim_getting_started)
+For the full installation starting at a clean Ubuntu 18.04, have a look at how Travis does it in about 15 minutes: [![Build Status](https://api.travis-ci.org/coincar-sim/coincarsim_getting_started.svg?branch=release)](https://travis-ci.org/coincar-sim/coincarsim_getting_started)
 
 #### 1) Source ROS
 * open a terminal
 * source ROS
-  * `source /opt/ros/kinetic/setup.bash` (`melodic` for Ubuntu 18.04)
+  * `source /opt/ros/melodic/setup.bash`
   * you might want to add this to your `.bashrc`
 
 #### 2) Use the script to download and install the framework
@@ -73,7 +71,7 @@ For the full installation starting at a clean Ubuntu 16.04, have a look at how T
   * `catkin_ws$ source devel/setup.bash`
 * start the simulation framework by launching the main launchfile:
   * `catkin_ws$ roslaunch simulation_initialization_ros_tool _whole_framework.launch`
-  * see the Readme of simulation_initialization_ros_tool for details about how the parts of the framework are launched
+  * see the [Readme of simulation_initialization_ros_tool](https://github.com/coincar-sim/simulation_initialization_ros_tool/blob/release/README.md) for details about how the parts of the framework are launched
 
 #### 4) Play with it
 * as further described in [FIRST_STEPS.md](FIRST_STEPS.md)
@@ -85,6 +83,9 @@ For the full installation starting at a clean Ubuntu 16.04, have a look at how T
 #### 6) Stay tuned
 * if you did choose the latest version, you can update it with
   * `catkin_ws$ wstool update`
+
+## Changelog
+- **June 2020**: xenial support has been dropped in [`rosinterface_handler`](https://github.com/KIT-MRT/rosinterface_handler) with [this commit](https://github.com/KIT-MRT/rosinterface_handler/commit/169e83266be8d105e87f4aa2be1a73b1a709aa02), so it is also dropped here; as a temporary solution, you might work with an old commit of `rosinterface_handler`
 
 ## License
 See the respective packages for license issues.
